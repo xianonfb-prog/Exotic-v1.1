@@ -12,12 +12,12 @@ import org.bukkit.attribute.Attribute;
 public final class AttributeKeys {
     private AttributeKeys() {}
 
-    public static final Attribute ATTACK_DAMAGE = get("generic.attack_damage");
-    public static final Attribute ATTACK_SPEED = get("generic.attack_speed");
-    public static final Attribute MOVEMENT_SPEED = get("generic.movement_speed");
-    public static final Attribute MAX_HEALTH = get("generic.max_health");
-    public static final Attribute STEP_HEIGHT = get("generic.step_height");
-    public static final Attribute ATTACK_KNOCKBACK = get("generic.attack_knockback");
+    public static final Attribute ATTACK_DAMAGE = get("attack_damage");
+    public static final Attribute ATTACK_SPEED = get("attack_speed");
+    public static final Attribute MOVEMENT_SPEED = get("movement_speed");
+    public static final Attribute MAX_HEALTH = get("max_health");
+    public static final Attribute STEP_HEIGHT = get("step_height");
+    public static final Attribute ATTACK_KNOCKBACK = get("attack_knockback");
 
     private static Attribute get(String key) {
         Attribute attribute = Registry.ATTRIBUTE.get(NamespacedKey.minecraft(key));
